@@ -71,6 +71,7 @@ Route::get('category', [CategoryController::class, 'index'])->name('category.ind
 Route::get('viewblog', [ViewBlogController::class, 'index'])->name('viewblog.index');
 /* Contact */
 Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('contact/store', [ContactController::class, 'store'])->name('contact.store');
 /* Login/ Logout */
 Route::get('login', [AuthFontendController::class, 'index'])->name('login.index');
 Route::post('authfontend.login', [AuthFontendController::class, 'login'])->name('authfontend.login');

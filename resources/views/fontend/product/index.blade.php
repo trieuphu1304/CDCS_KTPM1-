@@ -36,12 +36,7 @@
                         <div class="single-prd-item">
 							<img class="img-fluid" src="{{asset('upload/products/'.$products->image)}}" alt="">
 						</div>
-						<!-- <div class="single-prd-item">
-							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-						</div>
-						<div class="single-prd-item">
-							<img class="img-fluid" src="img/category/s-p1.jpg" alt="">
-						</div> -->
+						
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -58,7 +53,9 @@
 							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
 							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
 						</div>
-						<a class="button primary-btn" href="#">Add to Cart</a>
+
+						<a class="button primary-btn add-to-cart" data-id="{{ $products->id }}" href="javascript:void(0)">Add to Cart</a>
+
                         <div class="card_area d-flex align-items-center">
                             <a class="icon_btn" href="javascript:void(0)"><i class="fas fa-gem"></i></a>
                             <a class="icon_btn" href="javascript:void(0)"><i class="fas fa-heart"></i></a>

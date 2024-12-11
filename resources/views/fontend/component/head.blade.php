@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="{{ asset('public/fontend/css/style.css')}}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{{ asset('public/vendor/flasher/flasher.min.js') }}"></script>
 
   <link rel="stylesheet" href="{{ asset('public/fontend/css/main.css')}}">
-
-
   <meta name="csrf-token" content="{{ csrf_token() }}">
