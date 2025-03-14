@@ -78,7 +78,7 @@
       <li class="menu-item">
         <a href="{{ route('blog.index')}}" class="menu-link">
           <i class="menu-icon tf-icons bx bx-collection"></i>
-          <div data-i18n="Authentications">Blog</div>
+          <div data-i18n="Authentications">Tin tức</div>
         </a>
       </li>
       <li class="menu-item">
@@ -106,9 +106,15 @@
         </a>
       </li>
       <li class="menu-item">
+        <a href="{{ route('revenue.index')}}" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-table"></i>
+          <div data-i18n="Authentications">Thống kê doanh số</div>
+        </a>
+      </li>
+      <li class="menu-item">
         <a href="{{route('auth.logout')}}" class="menu-link">
           <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-          <div data-i18n="Authentications">Logout</div>
+          <div data-i18n="Authentications">Đăng xuất</div>
         </a>
       </li>
 

@@ -79,6 +79,7 @@ class CartController extends Controller
             'message' => 'Product added to cart',
             'cartCount' => $totalQuantity
         ], 200);
+        
     }
     
     public function update(Request $request)

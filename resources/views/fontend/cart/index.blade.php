@@ -1,19 +1,5 @@
 <body>
-    <section class="blog-banner-area" id="category">
-        <div class="container h-100">
-            <div class="blog-banner">
-                <div class="text-center">
-                    <h1>Shopping Cart</h1>
-                    <nav aria-label="breadcrumb" class="banner-breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
     <section class="cart_area">
         <div class="container">
@@ -22,11 +8,11 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">Product</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                                <th scope="col">Option</th>
+                                <th scope="col">Sản phẩm</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Tổng</th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -69,7 +55,7 @@
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa san pham này?')">
-                                                    <i class="bx bx-trash me-1">Xoa</i>
+                                                    <i class="bx bx-trash me-1">Xóa</i>
                                                 </button>
                                             </form>
                                         </td>
@@ -80,10 +66,10 @@
                             <tr class="bottom_button">
                                 <td colspan="3">
                                     <!-- Nút Update Cart -->
-                                    <a class="button" href="javascript:void(0);" onclick="updateCartFromButton()">Update Cart</a>
+                                    <a class="button" href="javascript:void(0);" onclick="updateCartFromButton()">Cập nhật giỏ hàng</a>
                                 </td>
                                 <td>
-                                    <h5>Subtotal</h5>
+                                    <h5>Tiền hàng</h5>
                                 </td>
                                 <td>
                                     <span id="total-amount">${{ number_format($total, 2) }}</span>                                
@@ -104,8 +90,8 @@
                                 </td>
                                 <td>
                                     <div class="checkout_btn_inner d-flex align-items-center">
-                                        <a style="padding: 0px 30px;" class="gray_btn" href="{{route('category.index')}}">Continue Shopping</a>
-                                        <a class="primary-btn ml-2" href="{{route('checkout.index')}}">Proceed to checkout</a>
+                                        <a style="padding: 0px 30px;" class="gray_btn" href="{{route('category.index')}}">Tiếp tục mua sắm</a>
+                                        <a class="primary-btn ml-2" href="{{route('checkout.index')}}">Thanh toán</a>
                                     </div>
                                 </td>
                             </tr>

@@ -1,8 +1,8 @@
 <section class="section-margin calc-60px">
     <div class="container">
       <div class="section-intro pb-60px">
-        <p>Popular Item in the market</p>
-        <h2>Best <span class="section-intro__style">Sellers</span></h2>
+        <p>Sản phẩm thịnh hành</p>
+        <h2>Sản phẩm <span class="section-intro__style">bán chạy</span></h2>
       </div>
       <div class="row">
         @foreach ($bestSellerProducts as $products)

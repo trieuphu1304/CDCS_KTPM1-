@@ -14,18 +14,18 @@
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
               <li class="nav-item">
-                <a href="{{route('shop.index')}}" class="nav-link">Home</a>
+                <a href="{{route('shop.index')}}" class="nav-link">Trang chủ</a>
               </li>              
               <li class="nav-item">
-                <a href="{{route('category.index')}}" class="nav-link">Category</a>
+                <a href="{{route('category.index')}}" class="nav-link">Danh mục</a>
               </li>
   
               <li class="nav-item">
-                <a href="{{route('viewblog.index')}}" class="nav-link">Blog</a>
+                <a href="{{route('viewblog.index')}}" class="nav-link">Tin tức</a>
               </li>
 
               <li class="nav-item">
-                <a href="{{route('contact.index')}}" class="nav-link">Contact</a>
+                <a href="{{route('contact.index')}}" class="nav-link">Liên hệ</a>
               </li>
 
             </ul>
@@ -60,10 +60,10 @@
                   </a>
                   <ul class="dropdown-menu">
                       @guest
-                          <li class="nav-item"><a class="nav-link" href="{{ route('login.index') }}">Login</a></li>
-                          <li style="margin-left:0px;" class="nav-item"><a class="nav-link" href="{{route('register.index')}}">Register</a></li>                      @endguest
+                          <li class="nav-item"><a class="nav-link" href="{{ route('login.index') }}">Đăng nhập</a></li>
+                          <li style="margin-left:0px;" class="nav-item"><a class="nav-link" href="{{route('register.index')}}">Đăng kí</a></li>                      @endguest
                       @auth
-                          <li style="margin-left:0px;" class="nav-item"><a class="nav-link" href="{{ route('authfontend.logout') }}">Logout</a></li>
+                          <li style="margin-left:0px;" class="nav-item"><a class="nav-link" href="{{ route('authfontend.logout') }}">Đăng xuất</a></li>
                       @endauth
                   </ul>
               </li>

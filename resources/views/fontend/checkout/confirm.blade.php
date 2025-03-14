@@ -1,26 +1,12 @@
 <body>
     
-    <section class="blog-banner-area" id="category">
-          <div class="container h-100">
-              <div class="blog-banner">
-                  <div class="text-center">
-                      <h1>Order Confirmation</h1>
-                      <nav aria-label="breadcrumb" class="banner-breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{route('shop.index')}}">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Shop Category</li>
-              </ol>
-            </nav>
-                  </div>
-              </div>
-      </div>
-    </section>
+    
       <!-- ================ end banner area ================= -->
     
     <!--================Order Details Area =================-->
     <section class="order_details section-margin--small">
       <div class="container">
-        <p class="text-center billing-alert">Thank you. Your order has been received.</p>
+        <p class="text-center billing-alert">Cảm ơn, đơn hàng của bạn đã đặt thành công</p>
         <div class="row mb-5">
           <div class="col-md-6 col-xl-4 mb-4 mb-xl-0">
             
@@ -33,9 +19,9 @@
           </div>
         </div>
         <div class="order_details_table">
-          <h2>Order Details</h2>
+          
           <div class="table-responsive">
-            <table class="table">
+            {{-- <table class="table">
               <thead>
                 <tr>
                   <th scope="col">Product</th>
@@ -71,7 +57,7 @@
                       <h5></h5>
                     </td>
                     <td>
-                      <p>{{ number_format($subtotal, 0, ',', '.') }} VND</p>
+                      <p>{{ number_format($subtotal, 2, ',', '.') }} VND</p>
                     </td>
                   </tr>
                   <tr>
@@ -93,17 +79,17 @@
                       <h5></h5>
                     </td>
                     <td>
-                      <h4>{{ number_format($subtotal + 50, 0, ',', '.') }} VND</h4>
+                      <h4>{{ number_format($subtotal + 50, 2, ',', '.') }} VND</h4>
                     </td>
                   </tr>
                   
               </tbody>
               
-            </table>
+            </table> --}}
             
           </div>
           <div class="checkout_btn_inner d-flex align-items-center">
-            <a style="padding: 0px 41px; margin-top: 30px; margin-left: auto;" class="gray_btn" href="{{route('category.index')}}">Continue Shopping</a>
+            <a style="padding: 0px 41px; margin-top: 30px; margin-left: auto;" class="gray_btn" href="{{route('category.index')}}">Tiếp tục mua sắm</a>
           </div>
           
         </div>

@@ -17,8 +17,8 @@ id="layout-navbar"
       <input
         type="text"
         class="form-control border-0 shadow-none"
-        placeholder="Searchpublic/backend."
-        aria-label="Searchpublic/backend."
+        placeholder="Search"
+        aria-label="Search"
       />
     </div>
   </div>

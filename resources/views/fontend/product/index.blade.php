@@ -1,22 +1,6 @@
 
 <body>
-    
-    <section class="blog-banner-area" id="blog">
-        <div class="container h-100">
-            <div class="blog-banner">
-                <div class="text-center">
-                    <h1>{{ $products->name }}</h1> <!-- Display product name -->
-                    <nav aria-label="breadcrumb" class="banner-breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('shop.index') }}">Shop</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">{{ $products->name }}</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!--================Single Product Area =================-->
 	<div class="product_image_area">
@@ -49,8 +33,8 @@
                         <h3>{{ $products->name }}</h3> 
                         <h2>${{ $products->price }}</h2> 
                         <ul class="list">
-                            <li><a class="active" href="#"><span>Category</span>: {{ $products->productcategory->name ?? 'No category' }}</a></li>
-                            <li><a href="#"><span>Availability</span>: {{ $products->stock ? 'In Stock' : 'Out of Stock' }}</a></li>
+                            <li><a class="active" href="#"><span>Danh mục</span>: {{ $products->productcategory->name ?? 'No category' }}</a></li>
+                            <li><a href="#"><span>Hiện tại</span>: {{ $products->stock ? 'Còn hàng' : 'Hết hàng' }}</a></li>
                         </ul>
 
                         <div class="product_count">
@@ -58,7 +42,7 @@
 							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
 							<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
 						</div>
-						<a class="button primary-btn" href="#">Add to Cart</a>
+						<a class="button primary-btn" href="#">Thêm vào giỏ hàng</a>
                         <div class="card_area d-flex align-items-center">
                             <a class="icon_btn" href="javascript:void(0)"><i class="fas fa-gem"></i></a>
                             <a class="icon_btn" href="javascript:void(0)"><i class="fas fa-heart"></i></a>
@@ -75,14 +59,14 @@
 		<div class="container">
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item">
-					<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Description</a>
+					<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Mô tả</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Specification</a>
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Thông tin sản phẩm</a>
 				</li>
 				
 				<li class="nav-item">
-					<a class="nav-link active show" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="true">Reviews</a>
+					<a class="nav-link active show" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="true">Đánh giá</a>
 				</li>
 			</ul>
 			<div class="tab-content" id="myTabContent">
@@ -95,7 +79,7 @@
 							<tbody>
 								<tr>
 									<td>
-										<h5>Width</h5>
+										<h5>Chiều rộng</h5>
 									</td>
 									<td>
 										<h5>128mm</h5>
@@ -103,7 +87,7 @@
 								</tr>
 								<tr>
 									<td>
-										<h5>Height</h5>
+										<h5>Chiều cao</h5>
 									</td>
 									<td>
 										<h5>508mm</h5>
@@ -111,7 +95,7 @@
 								</tr>
 								<tr>
 									<td>
-										<h5>Depth</h5>
+										<h5>Chiều sâu</h5>
 									</td>
 									<td>
 										<h5>85mm</h5>
@@ -119,7 +103,7 @@
 								</tr>
 								<tr>
 									<td>
-										<h5>Weight</h5>
+										<h5>Cân nặng</h5>
 									</td>
 									<td>
 										<h5>52gm</h5>
@@ -127,31 +111,23 @@
 								</tr>
 								<tr>
 									<td>
-										<h5>Quality checking</h5>
+										<h5>Kiểm tra hàng</h5>
 									</td>
 									<td>
-										<h5>yes</h5>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<h5>Freshness Duration</h5>
-									</td>
-									<td>
-										<h5>03days</h5>
+										<h5>Có</h5>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<h5>When packeting</h5>
+										<h5>Thời gian giao hàng</h5>
 									</td>
 									<td>
-										<h5>Without touch of hand</h5>
+										<h5>03 ngày</h5>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<h5>Each Box contains</h5>
+										<h5>Mỗi hộp chứa</h5>
 									</td>
 									<td>
 										<h5>60pcs</h5>
@@ -168,20 +144,20 @@
 							<div class="row total_rate">
 								<div class="col-6">
 									<div class="box_total">
-										<h5>Overall</h5>
+										<h5>Tổng thể</h5>
 										<h4>4.0</h4>
-										<h6>(03 Reviews)</h6>
+										<h6>(03 Đánh giá)</h6>
 									</div>
 								</div>
 								<div class="col-6">
 									<div class="rating_list">
-										<h3>Based on 3 Reviews</h3>
+										<h3>Dựa vào 3 bài đánh giá</h3>
 										<ul class="list">
-											<li><a href="#">5 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
-											<li><a href="#">4 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
-											<li><a href="#">3 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
-											<li><a href="#">2 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
-											<li><a href="#">1 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">5 Sao <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">4 Sao <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">3 Sao <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">2 Sao <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
+											<li><a href="#">1 Sao <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 01</a></li>
 										</ul>
 									</div>
 								</div>
@@ -201,9 +177,7 @@
 											<i class="fa fa-star"></i>
 										</div>
 									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-										commodo</p>
+									<p>Sản phẩm tuyệt vời</p>
 								</div>
 								
 								
@@ -211,8 +185,8 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="review_box">
-								<h4>Add a Review</h4>
-								<p>Your Rating:</p>
+								<h4>Đánh giá sản phẩm</h4>
+								<p>Đánh giá của bạn:</p>
 								<ul class="list">
 									<li><a href="#"><i class="fa fa-star"></i></a></li>
 									<li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -220,22 +194,22 @@
 									<li><a href="#"><i class="fa fa-star"></i></a></li>
 									<li><a href="#"><i class="fa fa-star"></i></a></li>
 								</ul>
-								<p>Outstanding</p>
+								
                 <form action="#/" class="form-contact form-review mt-3">
                   <div class="form-group">
-                    <input class="form-control" name="name" type="text" placeholder="Enter your name" required="">
+                    <input class="form-control" name="name" type="text" placeholder="Tên" required="">
                   </div>
                   <div class="form-group">
-                    <input class="form-control" name="email" type="email" placeholder="Enter email address" required="">
+                    <input class="form-control" name="email" type="email" placeholder="Email" required="">
                   </div>
                   <div class="form-group">
-                    <input class="form-control" name="subject" type="text" placeholder="Enter Subject">
+                    <input class="form-control" name="subject" type="text" placeholder="Tiêu đề">
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control different-control w-100" name="textarea" id="textarea" cols="30" rows="5" placeholder="Enter Message"></textarea>
+                    <textarea class="form-control different-control w-100" name="textarea" id="textarea" cols="30" rows="5" placeholder="Nội dung"></textarea>
                   </div>
                   <div class="form-group text-center text-md-right mt-3">
-                    <button type="submit" class="button button--active button-review">Submit Now</button>
+                    <button type="submit" class="button button--active button-review">Đánh giá ngay</button>
                   </div>
                 </form>
 							</div>

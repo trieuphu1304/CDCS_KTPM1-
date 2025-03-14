@@ -80,38 +80,37 @@ class CheckoutController extends Controller
                     'product_id' => $productId,
                     'quantity' => $item['quantity'],
                     'price' => $item['price'],
+                    'total_price' => $item['price'] * $item['quantity'],
                 ]);
             }
             session()->forget('cart');
             
-            return redirect()->route('checkout.comfirm')->with('success', 'Đơn hàng của bạn đã được đặt thành công!');
+            return redirect()->route('checkout.confirm')->with('success', 'Đơn hàng của bạn đã được đặt thành công!');
         
         }
         catch (\Exception $e) {
-            DB::rollBack();
-            Log::error('Error creating order: '.$e->getMessage());
-            return redirect()->back()->with('error', 'Có lỗi xảy ra khi đặt hàng: ' . $e->getMessage());
-           
-        }
+            return ($e->getMessage()); // Hiển thị lỗi để kiểm tra
+        }        
 
     }
 
 
-    public function comfirm() {
-        $template = 'fontend.checkout.comfirm';
-
+    public function confirm() {
+        $template = 'fontend.checkout.confirm';
         $cart = session()->get('cart', []);
-
+    
+    
         // Lấy danh sách sản phẩm trong giỏ hàng
-        $productIds = array_keys($cart);  // Lấy các id của sản phẩm trong giỏ hàng
-        $products = Products::whereIn('id', $productIds)->get();  // Lấy các sản phẩm từ CSDL
-
-        // Tính toán tổng số lượng và tổng giá trị
+        $productIds = array_keys($cart);
+        $products = Products::whereIn('id', $productIds)->get();
+    
+        // Tính tổng
         $total = 0;
         foreach ($cart as $productId => $item) {
             $total += $item['price'] * $item['quantity'];
         }
-
+    
+    
         return view('fontend.layout', compact(
             'template',
             'products',
@@ -119,4 +118,5 @@ class CheckoutController extends Controller
             'total'
         ));
     }
+    
 }

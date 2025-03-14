@@ -8,6 +8,7 @@ use App\Http\Controllers\Backend\ProductsController;
 use App\Http\Controllers\Backend\ProductCategoryController;
 use App\Http\Controllers\Backend\UsersController;
 use App\Http\Controllers\Backend\OrdersController;
+use App\Http\Controllers\Backend\RevenueController;
 use App\Http\Controllers\Fontend\ShopController;
 use App\Http\Controllers\Fontend\CategoryController;
 use App\Http\Controllers\Fontend\ContactController;
@@ -18,7 +19,7 @@ use App\Http\Controllers\Fontend\CheckoutController;
 use App\Http\Controllers\Fontend\ProductDetailController;
 use App\Http\Controllers\Fontend\RegisterController;
 use App\Http\Middleware\AuthenticateMiddleware;
-use Faker\Guesser\Name;
+
 
 /* Route Backend */
 Route::get('admin', [AuthController::class, 'admin'])->name('auth.admin');
@@ -60,10 +61,12 @@ Route::get('orders/index', [OrdersController::class, 'index'])->name('orders.ind
 Route::get('oders/edit/{id}', [OrdersController::class, 'edit'])->name('orders.edit')->middleware(AuthenticateMiddleware::class);
 Route::post('orders/update/{id}', [OrdersController::class, 'update'])->name('orders.update')->middleware(AuthenticateMiddleware::class);
 Route::delete('oders/delete/{id}', [OrdersController::class, 'delete'])->name('orders.delete')->middleware(AuthenticateMiddleware::class);
+/* Revenue */
+Route::get('revenue/index',[RevenueController::class, 'index'])->name('revenue.index')->middleware(AuthenticateMiddleware::class);
 
 /* Route Fontend */
 
-/* Index */
+/* Index */ 
 Route::get('shop', [ShopController::class, 'index'])->name('shop.index');
 /* Product Category */
 Route::get('category', [CategoryController::class, 'index'])->name('category.index');
@@ -88,4 +91,4 @@ Route::delete('cart/delete/{id}', [CartController::class, 'delete'])->name('cart
 /* Checkout */ 
 Route::get('checkout',[CheckoutController::class, 'index'])->name('checkout.index');
 Route::post('checkout', [CheckoutController::class, 'checkout'])->name('checkout')->middleware('auth');
-Route::get('comfirm',[CheckoutController::class, 'comfirm'])->name('checkout.comfirm');
+Route::get('confirm',[CheckoutController::class, 'confirm'])->name('checkout.confirm'); 
