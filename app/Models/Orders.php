@@ -19,7 +19,7 @@ class Orders extends Model
         'email',
         'phone',
         'address',
-        'oder_date',
+        'order_date',
         'status',
     ];
 

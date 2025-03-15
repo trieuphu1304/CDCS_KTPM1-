@@ -29,6 +29,11 @@
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $orders->email) }}" required>
                             </div>
+
+                            <div class="mb-3">
+                                <label for="order_date" class="form-label">Ngày đặt hàng</label>
+                                <input type="order_date" class="form-control" id="order_date" name="order_date" value="{{ old('order_date', $orders->order_date) }}" required>
+                            </div>
                     
                             <div class="mb-3">
                                 <label for="status" class="form-label">Trạng thái</label>

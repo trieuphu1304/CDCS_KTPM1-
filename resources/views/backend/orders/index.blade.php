@@ -8,6 +8,7 @@
               <th><input type="checkbox" value="" id="checkAll" class="input-checkbox"></th>
               <th>Tên khách hàng</th>
               <th>Email</th>
+              <th>Ngày đặt hàng</th>
               <th>Trạng thái</th>
             </tr>
           </thead>
@@ -18,6 +19,7 @@
                         <td><input type="checkbox" value="{{ $orders->id }}" class="input-checkbox checked-item"></td>
                         <td>{{ $orders->name }}</td>
                         <td>{{ $orders->email }}</td>
+                        <td>{{ \Carbon\Carbon::parse($orders->order_date)->format('d/m/Y') }}</td>
                         <td>{{ ucfirst($orders->status) }}</td>
                         <td>
                             <a href="{{route('orders.edit', $orders->id)}}" class="btn btn-success"><i class="bx bx-edit-alt me-1"></i> </a>

@@ -46,7 +46,7 @@
         .then(response => response.json())
         .then(data => {
           // Cập nhật giỏ hàng và hiển thị thông báo thành công
-          alert(data.message); // Bạn có thể thay thế bằng cách khác để thông báo
+          
           document.querySelector('.nav-shop__circle').textContent = data.cartCount; // Cập nhật số lượng giỏ hàng
         })
         .catch(error => {

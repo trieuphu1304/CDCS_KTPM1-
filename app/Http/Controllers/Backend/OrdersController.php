@@ -36,11 +36,13 @@ class OrdersController extends Controller
         $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|max:255',
+            'order_date' => 'required',
             'status' => 'required|in:pending,processing,completed,canceled',
         ]);
         $orders = Orders::find($id);
         $orders -> name = $request ->input('name');
         $orders -> email = $request->input('email');
+        $orders -> email = $request->input('order_date');
         $orders -> status = $request->input('status');
         
         $orders->save();

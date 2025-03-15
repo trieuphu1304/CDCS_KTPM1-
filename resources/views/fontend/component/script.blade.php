@@ -29,8 +29,7 @@
   
   <df-messenger
   intent="Xin chào"
-  chat-title="Cửa hàng Aroma"
+  chat-title="Dịch vụ tư vấn"
   agent-id="63a70a68-bcf4-482d-b60f-8b1eecb28db9"
-  language-code="vi"
-  icon-url="{{ asset('fontend/img/chatbot.webp') }}">
+  language-code="vi">
 </df-messenger>

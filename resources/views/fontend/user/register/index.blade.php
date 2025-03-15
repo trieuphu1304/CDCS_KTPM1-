@@ -1,5 +1,13 @@
 <body>
-
+	@if ($errors->any())
+		<div class="alert alert-danger">
+			<ul>
+				@foreach ($errors->all() as $error)
+					<li>{{ $error }}</li>
+				@endforeach
+			</ul>
+		</div>
+	@endif
 	
 	<!-- ================ end banner area ================= -->
   
@@ -15,15 +23,7 @@
 						</div>
 					</div>
 				</div>
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
+
 				<div class="col-lg-6">
 					<div class="login_form_inner register_form_inner">
 						<h3>Đăng kí</h3>
