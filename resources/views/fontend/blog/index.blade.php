@@ -11,10 +11,10 @@
                         <div class="categories_details">
                             <div class="categories_text">
                                 <a href="single-blog.html">
-                                    <h5>Social Life</h5>
+                                    <h5>Tin tức mới</h5>
                                 </a>
                                 <div class="border_line"></div>
-                                <p>Enjoy your social life together</p>
+                                <p>Tận hưởng những phút giây mua sắm tuyệt vời</p>
                             </div>
                         </div>
                         
@@ -36,19 +36,19 @@
                             <div class="col-md-3">
                                 <div class="blog_info text-right">
                                     <div class="post_tag">
-                                        <a href="#">Food,</a>
-                                        <a class="active" href="#">Technology,</a>
-                                        <a href="#">Politics,</a>
-                                        <a href="#">Lifestyle</a>
+                                        <a href="#">Đồ ăn,</a>
+                                        <a class="active" href="#">Công nghệ,</a>
+                                        <a href="#">Chính sách,</a>
+                                        <a href="#">Phong cách</a>
                                     </div>
                                     <ul class="blog_meta list">
                                         <li>
-                                            <a href="#">Mark wiens
+                                            <a href="#">Triệu phú
                                                 <i class="lnr lnr-user"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">12 Dec, 2017
+                                            <a href="#">Tháng 2, 2025
                                                 <i class="lnr lnr-calendar-full"></i>
                                             </a>
                                         </li>
@@ -58,7 +58,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">06 Comments
+                                            <a href="#">06 Bình luận
                                                 <i class="lnr lnr-bubble"></i>
                                             </a>
                                         </li>
@@ -70,12 +70,10 @@
                                     <img src="img/blog/main-blog/m-blog-1.jpg" alt="">
                                     <div class="blog_details">
                                         <a href="single-blog.html">
-                                            <h2>Astronomy Binoculars A Great Alternative</h2>
+                                            <h2>Sản phẩm tuyệt vời là cốt lõi của bán hàng</h2>
                                         </a>
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                            why you should have to spend money on boot camp when you can get the MCSE study
-                                            materials yourself at a fraction.</p>
-                                        <a class="button button-blog" href="#">View More</a>
+                                        <p>Luôn quan tâm đến trải nghiệm người dùng và lợi ích của khách hàng</p>
+                                        <a class="button button-blog" href="#">Xem thêm</a>
                                     </div>
                                 </div>
                             </div>
@@ -84,46 +82,18 @@
                             <div class="col-md-3">
                                 <div class="blog_info text-right">
                                     <div class="post_tag">
-                                        <a href="#">Food,</a>
-                                        <a class="active" href="#">Technology,</a>
-                                        <a href="#">Politics,</a>
-                                        <a href="#">Lifestyle</a>
+                                       
                                     </div>
                                     <ul class="blog_meta list">
-                                        <li>
-                                            <a href="#">Mark wiens
-                                                <i class="lnr lnr-user"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">12 Dec, 2017
-                                                <i class="lnr lnr-calendar-full"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">1.2M Views
-                                                <i class="lnr lnr-eye"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">06 Comments
-                                                <i class="lnr lnr-bubble"></i>
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-md-9">
                                 <div class="blog_post">
-                                    <img src="img/blog/main-blog/m-blog-2.jpg" alt="">
+                                    
                                     <div class="blog_details">
-                                        <a href="single-blog.html">
-                                            <h2>The Basics Of Buying A Telescope</h2>
-                                        </a>
-                                        <p>MCSE boot camps have its supporters and its detractors. Some people do not understand
-                                            why you should have to spend money on boot camp when you can get the MCSE study
-                                            materials yourself at a fraction.</p>
-                                            <a class="button button-blog" href="#">View More</a>
+                                        
                                         </div>
                                 </div>
                             </div>
@@ -140,7 +110,7 @@
                     <div class="blog_right_sidebar">
                         <aside class="single_sidebar_widget search_widget">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search Posts">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm bài viết">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button">
                                         <i class="lnr lnr-magnifier"></i>
@@ -152,8 +122,8 @@
                         </aside>
                         <aside class="single_sidebar_widget author_widget">
                             <img class="author_img rounded-circle" src="img/blog/author.png" alt="">
-                            <h4>Charlie Barber</h4>
-                            <p>Senior blog writer</p>
+                            <h4>Triệu phú</h4>
+                            <p>Chuyên gia đánh giá</p>
                             <div class="social_icon">
                                 <a href="#">
                                     <i class="fab fa-facebook-f"></i>
@@ -168,9 +138,7 @@
                                   <i class="fab fa-behance"></i>
                                 </a>
                             </div>
-                            <p>Boot camps have its supporters andit sdetractors. Some people do not understand why you should
-                                have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits
-                                detractors.
+                            <p>
                             </p>
                             <div class="br"></div>
                         </aside>
@@ -186,7 +154,7 @@
     <section class="instagram_area">
       <div class="container box_1620">
         <div class="insta_btn">
-          <a class="btn theme_btn" href="#">Follow us on instagram</a>
+          <a class="btn theme_btn" href="#">Theo dõi chúng tôi</a>
         </div>
         <div class="instagram_image row m0">
           <a href="#"><img src="img/instagram/ins-1.jpg" alt=""></a>
